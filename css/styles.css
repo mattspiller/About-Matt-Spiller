@@ -1,0 +1,477 @@
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+  margin: 0;
+  text-align: center;
+  background-color: #87431D;
+  font-family: Garamond,Arial,serif;
+  z-index: 1;
+}
+
+h1 {
+  margin: 0 auto;
+  font-size: 4rem;
+}
+
+h2 {
+  position: relative;
+  font-size: 3rem;
+  margin-top: 4rem;
+  margin-bottom: 0;
+  z-index: 1;
+}
+
+h3 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
+  z-index: 1;
+}
+
+h4 {
+  font-size: 1.75rem;
+  margin-top: 0;
+}
+
+h5 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+h6 {
+  font-size: 1rem;
+}
+
+hr {
+  border-color: #BE8C63;
+  border-style: none;
+  border-top-style: dotted;
+  border-width: 0.75vw;
+  height: 0;
+  width: 18vw;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
+}
+
+p {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.5rem;
+}
+
+ul {
+  margin: 0;
+}
+
+li {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.title {
+  position: relative;
+  top: 40vh;
+}
+
+.top-container {
+  padding-bottom: 125vh;
+  position: relative;
+  background-color: #7FB5FF;
+}
+
+.sun {
+  width: 20vw;
+  position: absolute;
+  left: -6vw;
+  top: -13vh;
+}
+
+.cloud {
+  position: absolute;
+  width: 25%;
+}
+
+.grass {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  bottom: 0;
+}
+
+.grass-layer {
+  height: 0.25rem;
+}
+
+.section-heading {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+.align-section-left {
+  text-align: left;
+  margin-left: 5rem;
+}
+
+.align-section-right {
+  text-align: right;
+  margin-right: 5rem;
+}
+
+.values {
+  position: relative;
+}
+
+.core {
+  position: absolute;
+  /*right: -24.5rem;*/
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 1vh;
+  right: 0;
+}
+
+.topc {
+  padding-top: 50px;
+}
+
+.midc {
+  background-color: blue;
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  left: 40%;
+  top: 20%;
+  display: none;
+}
+
+.botc {
+  background-color: red;
+  width: 30%;
+  height: 10%;
+  position: absolute;
+  left: 70%;
+  top: 30%;
+  display: none;
+}
+
+.skills {
+  display: block;
+}
+
+.skill-row {
+  display: inline-block;
+  position: relative;
+  width: 50rem;
+}
+
+.skill-text {
+  display: flex;
+  text-align: left;
+  height: 18rem;
+  align-items: center;
+}
+
+.spacer {
+  padding: 5rem 0 5rem 0;
+  margin: 5rem 0 1rem 0;
+}
+
+.value-text {
+  display: flex;
+  text-align: left;
+  height: 7rem;
+  align-items: center;
+}
+
+.number-crunch-text {
+  display: flex;
+  text-align: left;
+  height: 15rem;
+  align-items: center;
+}
+
+.sub-text {
+  padding-left: 2vw;
+}
+
+.skill-images {
+  /*width: 20vw;*/
+  width: 18rem;
+  float: left;
+  margin-right: 2vw;
+}
+
+.value-images {
+  width: 7rem;
+  float: left;
+  margin-right: 2vw;
+}
+
+.number-crunch-image {
+  width: 25rem;
+  float: left;
+  margin-right: 2vw;
+}
+
+.padded-hr {
+  margin-top: 2.5rem;
+}
+
+.inline-paragraph {
+  display: inline;
+}
+
+.inline-link {
+  font-size: 1.5rem;
+}
+
+.bottom-container {
+  padding-bottom: 5vh;
+  position: relative;
+  background-color: rgb(135, 145, 255);
+}
+
+.night-landscape {
+  transform: scaleY(-1);
+  margin: 0;
+  position: relative;
+  width: 100vw
+}
+
+.profile-pic {
+  margin-bottom: 5rem;
+}
+
+#cloud1 {
+  right: 20vw;
+  top: 5vh;
+}
+
+#cloud2 {
+  top: 40vh;
+  left: 0;
+}
+
+#cloud3 {
+  top: 7vh;
+  left: 20vw;
+}
+
+#cloud4 {
+  top: 60vh;
+  right: 35vw;
+}
+
+#cloud5 {
+  top: 40vh;
+  right: 5vw;
+}
+
+#grass-layer1 {
+  background-color: rgb(81, 146, 89);
+}
+
+#grass-layer2 {
+  background-color: rgb(87, 138, 82);
+}
+
+#grass-layer3 {
+  background-color: rgb(94, 130, 75);
+}
+
+#grass-layer4 {
+  background-color: rgb(100, 122, 67);
+}
+
+#grass-layer5 {
+  background-color: rgb(106, 114, 60);
+}
+
+#grass-layer11 {
+  background-color: rgb(112, 105, 53);
+}
+
+#grass-layer12 {
+  background-color: rgb(118, 95, 45);
+}
+
+#grass-layer13 {
+  background-color: rgb(124, 85, 38);
+}
+
+#grass-layer14 {
+  background-color: rgb(130, 75, 32);
+}
+
+#grass-layer15 {
+  background-color: rgb(135, 67, 29)
+}
+
+#grass-layer6 {
+  background-color: rgb(122, 61, 29);
+  margin-top: 6rem;
+}
+
+#grass-layer7 {
+  background-color: rgb(109, 55, 29);
+}
+
+#grass-layer8 {
+  background-color: rgb(96, 49, 28);
+}
+
+#grass-layer9 {
+  background-color: rgb(83, 42, 28);
+}
+
+#grass-layer10 {
+  background-color: rgb(70, 35, 27);
+}
+
+#grass-layer16 {
+  background-color: rgb(57, 29, 27);
+}
+
+#grass-layer17 {
+  background-color: rgb(43, 23, 26);
+}
+
+#grass-layer18 {
+  background-color: rgb(28, 20, 25);
+}
+
+#grass-layer19 {
+  background-color: rgb(15, 17, 24);
+}
+
+#grass-layer20 {
+  background-color: rgb(2, 15, 23);
+}
+
+#bottom-sky1 {
+  background-color: rgb(36, 47, 155);
+  margin: -0.3rem;
+  padding: 0;
+}
+
+#bottom-sky2 {
+  background-color: rgb(40, 50, 160);
+
+  padding: 0;
+}
+
+#bottom-sky3 {
+  background-color: rgb(45, 55, 165);
+
+  padding: 0;
+}
+
+#bottom-sky4 {
+  background-color: rgb(50, 60, 170);
+
+  padding: 0;
+}
+
+#bottom-sky5 {
+  background-color: rgb(55, 65, 175);
+  padding: 0;
+}
+
+#bottom-sky6 {
+  background-color: rgb(60, 70, 180);
+
+  padding: 0;
+}
+
+#bottom-sky7 {
+  background-color: rgb(65, 75, 185);
+
+  padding: 0;
+}
+
+#bottom-sky8 {
+  background-color: rgb(70, 80, 190);
+
+  padding: 0;
+}
+
+#bottom-sky9 {
+  background-color: rgb(75, 85, 195);
+
+  padding: 0;
+}
+
+#bottom-sky10 {
+  background-color: rgb(80, 90, 200);
+
+  padding: 0;
+}
+
+#bottom-sky11 {
+  background-color: rgb(85, 95, 205);
+  margin: -0.3rem;
+  padding: 0;
+}
+
+#bottom-sky12 {
+  background-color: rgb(90, 100, 210);
+
+  padding: 0;
+}
+
+#bottom-sky13 {
+  background-color: rgb(95, 105, 215);
+
+  padding: 0;
+}
+
+#bottom-sky14 {
+  background-color: rgb(100, 110, 220);
+
+  padding: 0;
+}
+
+#bottom-sky15 {
+  background-color: rgb(105, 115, 225);
+  padding: 0;
+}
+
+#bottom-sky16 {
+  background-color: rgb(110, 120, 230);
+
+  padding: 0;
+}
+
+#bottom-sky17 {
+  background-color: rgb(115, 125, 235);
+
+  padding: 0;
+}
+
+#bottom-sky18 {
+  background-color: rgb(120, 130, 240);
+
+  padding: 0;
+}
+
+#bottom-sky19 {
+  background-color: rgb(125, 135, 245);
+
+  padding: 0;
+}
+
+#bottom-sky20 {
+  background-color: rgb(130, 140, 250);
+
+  padding: 0;
+}
+
+#values-heading {
+  padding-top: 9rem;
+}
+
+/*#values-heading {
+  margin-top: 2rem;
+  padding: 4rem;
+}*/
