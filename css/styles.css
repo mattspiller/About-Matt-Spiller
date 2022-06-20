@@ -168,7 +168,7 @@ li {
 .number-crunch-text {
   display: flex;
   text-align: left;
-  height: 15rem;
+  height: 18rem;
   align-items: center;
 }
 
@@ -189,9 +189,14 @@ li {
 }
 
 .number-crunch-image {
-  width: 25rem;
+  width: 32rem;
   float: left;
   margin-right: 2vw;
+}
+
+.game-link {
+  margin-top: 1rem;
+  width: 35vw;
 }
 
 .padded-hr {
@@ -221,6 +226,10 @@ li {
 
 .profile-pic {
   margin-bottom: 5rem;
+}
+
+.Projects {
+  display: block;
 }
 
 #cloud1 {
@@ -449,4 +458,8 @@ li {
 
 #values-heading {
   padding-top: 9rem;
+}
+
+#game-row {
+  width: 70rem;
 }
