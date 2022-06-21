@@ -1,10 +1,9 @@
-
 body {
   max-width: 100%;
   overflow-x: hidden;
   margin: 0;
   text-align: center;
-  background-color: #87431D;
+  background-color: #7FB5FF;
   font-family: 'Quicksand', serif;
   z-index: 1;
 }
@@ -17,10 +16,11 @@ h1 {
 h2 {
   position: relative;
   font-size: 3rem;
-  margin-top: 4rem;
-  margin-bottom: 1rem;
+  padding-top: 2rem;
+  padding-bottom: 0.5rem;
   z-index: 1;
   color: white;
+  margin: 0;
 }
 
 h3 {
@@ -38,12 +38,7 @@ h4 {
 
 h5 {
   font-size: 1.25rem;
-  margin: 0;
-  color: white;
-}
-
-h6 {
-  font-size: 1rem;
+  margin: 0.2rem 0 0 0;
   color: white;
 }
 
@@ -54,14 +49,15 @@ hr {
   border-width: 0.75vw;
   height: 0;
   width: 18vw;
-  margin-bottom: 5vh;
-  margin-top: 5vh;
+  margin-top: 3vh;
 }
 
 p {
-  margin: 0 0 0.5rem 0;
+  width: auto;
+  margin: 0 0 0.1rem 0;
   font-size: 1.42rem;
   color: white;
+  display: block;
 }
 
 ul {
@@ -74,27 +70,37 @@ li {
   color: white;
 }
 
-.title {
+.bottom-container {
+  display: block;
+  padding-bottom: 0.5vh;
   position: relative;
-  top: 40vh;
-}
-
-.top-container {
-  padding-bottom: 125vh;
-  position: relative;
-  background-color: #7FB5FF;
-}
-
-.sun {
-  width: 20vw;
-  position: absolute;
-  left: -6vw;
-  top: -13vh;
+  background-color: rgb(135, 145, 255);
 }
 
 .cloud {
   position: absolute;
   width: 25%;
+}
+
+.contact-me {
+  margin-bottom: 0.5rem;
+}
+
+.core {
+  position: absolute;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  top: 1vh;
+  right: 0;
+}
+
+.game-link {
+  display: block;
+  position: relative;
+  margin-top: 0.6rem;
+  width: 100%;
+  height: 8rem;
 }
 
 .grass {
@@ -108,32 +114,74 @@ li {
   height: 0.25rem;
 }
 
-.section-heading {
-  text-decoration: underline;
-  margin-bottom: 2rem;
-}
-
 .hidden-hr {
   visibility: hidden;
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
 }
 
-.values {
-  position: relative;
+.inline-link {
+  font-size: 1.5rem;
 }
 
-.core {
-  position: absolute;
-  z-index: 0;
-  width: 100%;
-  height: 100%;
-  top: 1vh;
-  right: 0;
+.inline-paragraph {
+  display: inline-block;
+}
+
+.middle-container {
+  background-color: #87431D;
+}
+
+.night-landscape {
+  transform: scaleY(-1);
+  margin: 0;
+  position: relative;
+  width: 100vw;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.number-crunch-image {
+  width: 26rem;
+  float: left;
+  margin-right: 1rem;
+}
+
+.number-crunch-text {
+  display: flex;
+  text-align: left;
+  align-items: center;
+}
+
+.padded-hr {
+  margin-top: 2rem;
+  margin-bottom: 0;
+}
+
+.profile-pic {
+  margin-bottom: 5rem;
+}
+
+.Projects {
+  display: block;
+}
+
+.section-heading {
+  text-decoration: underline;
+  padding-bottom: 2rem;
+  padding-top: 4rem;
 }
 
 .skills {
   display: block;
+}
+
+.skill-images {
+  width: 18rem;
+  float: left;
+  margin-right: 2vw;
 }
 
 .skill-row {
@@ -154,32 +202,30 @@ li {
   margin: 5rem 0 1rem 0;
 }
 
-.value-text {
-  display: flex;
-  text-align: left;
-  height: 7rem;
-  align-items: center;
-}
-
-.no-margin {
-  margin: 0;
-}
-
-.number-crunch-text {
-  display: flex;
-  text-align: left;
-  height: 18rem;
-  align-items: center;
-}
-
 .sub-text {
   padding-left: 2vw;
 }
 
-.skill-images {
-  width: 18rem;
-  float: left;
-  margin-right: 2vw;
+.sun {
+  width: 20vw;
+  position: absolute;
+  left: -6vw;
+  top: -13vh;
+}
+
+.title {
+  position: relative;
+  top: 40vh;
+}
+
+.top-container {
+  padding-bottom: 120vh;
+  position: relative;
+  background-color: #7FB5FF;
+}
+
+.values {
+  position: relative;
 }
 
 .value-images {
@@ -188,48 +234,129 @@ li {
   margin-right: 2vw;
 }
 
-.number-crunch-image {
-  width: 32rem;
-  float: left;
-  margin-right: 2vw;
+.value-text {
+  display: flex;
+  text-align: left;
+  height: 7rem;
+  align-items: center;
 }
 
-.game-link {
-  margin-top: 1rem;
-  width: 28vw;
+#bottom-sky1 {
+  background-color: rgb(8, 18, 122);
+  margin-top: -0.3rem;
+  padding: 0;
 }
 
-.padded-hr {
-  margin-top: 5rem;
+#bottom-sky2 {
+  background-color: rgb(14, 24, 128);
+
+  padding: 0;
 }
 
-.inline-paragraph {
-  display: inline;
+#bottom-sky3 {
+  background-color: rgb(20, 30, 134);
+
+  padding: 0;
 }
 
-.inline-link {
-  font-size: 1.5rem;
+#bottom-sky4 {
+  background-color: rgb(26, 36, 140);
+
+  padding: 0;
 }
 
-.bottom-container {
-  padding-bottom: 5vh;
-  position: relative;
-  background-color: rgb(135, 145, 255);
+#bottom-sky5 {
+  background-color: rgb(32, 42, 146);
+  padding: 0;
 }
 
-.night-landscape {
-  transform: scaleY(-1);
-  margin: 0;
-  position: relative;
-  width: 100vw
+#bottom-sky6 {
+  background-color: rgb(39, 49, 153);
+
+  padding: 0;
 }
 
-.profile-pic {
-  margin-bottom: 5rem;
+#bottom-sky7 {
+  background-color: rgb(46, 56, 160);
+
+  padding: 0;
 }
 
-.Projects {
-  display: block;
+#bottom-sky8 {
+  background-color: rgb(53, 63, 167);
+
+  padding: 0;
+}
+
+#bottom-sky9 {
+  background-color: rgb(60, 70, 174);
+
+  padding: 0;
+}
+
+#bottom-sky10 {
+  background-color: rgb(67, 77, 181);
+
+  padding: 0;
+}
+
+#bottom-sky11 {
+  background-color: rgb(74, 84, 188);
+  /*margin: -0.3rem;*/
+  padding: 0;
+}
+
+#bottom-sky12 {
+  background-color: rgb(81, 91, 195);
+
+  padding: 0;
+}
+
+#bottom-sky13 {
+  background-color: rgb(88, 98, 202);
+
+  padding: 0;
+}
+
+#bottom-sky14 {
+  background-color: rgb(95, 105, 209);
+
+  padding: 0;
+}
+
+#bottom-sky15 {
+  background-color: rgb(102, 112, 216);
+  padding: 0;
+}
+
+#bottom-sky16 {
+  background-color: rgb(108, 118, 223);
+
+  padding: 0;
+}
+
+#bottom-sky17 {
+  background-color: rgb(114, 124, 230);
+
+  padding: 0;
+}
+
+#bottom-sky18 {
+  background-color: rgb(120, 130, 237);
+
+  padding: 0;
+}
+
+#bottom-sky19 {
+  background-color: rgb(125, 135, 244);
+
+  padding: 0;
+}
+
+#bottom-sky20 {
+  background-color: rgb(130, 140, 250);
+
+  padding: 0;
 }
 
 #cloud1 {
@@ -255,6 +382,11 @@ li {
 #cloud5 {
   top: 40vh;
   right: 5vw;
+}
+
+#copyright {
+  padding-top: 1rem;
+  font-size: 1rem;
 }
 
 #grass-layer1 {
@@ -338,122 +470,8 @@ li {
   background-color: rgb(2, 15, 23);
 }
 
-#bottom-sky1 {
-  background-color: rgb(36, 47, 155);
-  margin: -0.3rem;
-  padding: 0;
-}
-
-#bottom-sky2 {
-  background-color: rgb(40, 50, 160);
-
-  padding: 0;
-}
-
-#bottom-sky3 {
-  background-color: rgb(45, 55, 165);
-
-  padding: 0;
-}
-
-#bottom-sky4 {
-  background-color: rgb(50, 60, 170);
-
-  padding: 0;
-}
-
-#bottom-sky5 {
-  background-color: rgb(55, 65, 175);
-  padding: 0;
-}
-
-#bottom-sky6 {
-  background-color: rgb(60, 70, 180);
-
-  padding: 0;
-}
-
-#bottom-sky7 {
-  background-color: rgb(65, 75, 185);
-
-  padding: 0;
-}
-
-#bottom-sky8 {
-  background-color: rgb(70, 80, 190);
-
-  padding: 0;
-}
-
-#bottom-sky9 {
-  background-color: rgb(75, 85, 195);
-
-  padding: 0;
-}
-
-#bottom-sky10 {
-  background-color: rgb(80, 90, 200);
-
-  padding: 0;
-}
-
-#bottom-sky11 {
-  background-color: rgb(85, 95, 205);
-  margin: -0.3rem;
-  padding: 0;
-}
-
-#bottom-sky12 {
-  background-color: rgb(90, 100, 210);
-
-  padding: 0;
-}
-
-#bottom-sky13 {
-  background-color: rgb(95, 105, 215);
-
-  padding: 0;
-}
-
-#bottom-sky14 {
-  background-color: rgb(100, 110, 220);
-
-  padding: 0;
-}
-
-#bottom-sky15 {
-  background-color: rgb(105, 115, 225);
-  padding: 0;
-}
-
-#bottom-sky16 {
-  background-color: rgb(110, 120, 230);
-
-  padding: 0;
-}
-
-#bottom-sky17 {
-  background-color: rgb(115, 125, 235);
-
-  padding: 0;
-}
-
-#bottom-sky18 {
-  background-color: rgb(120, 130, 240);
-
-  padding: 0;
-}
-
-#bottom-sky19 {
-  background-color: rgb(125, 135, 245);
-
-  padding: 0;
-}
-
-#bottom-sky20 {
-  background-color: rgb(130, 140, 250);
-
-  padding: 0;
+#number-crunch {
+  width: auto;
 }
 
 #values-heading {
