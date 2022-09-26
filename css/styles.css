@@ -4,18 +4,18 @@ body {
   margin: 0;
   text-align: center;
   background-color: #7FB5FF;
-  font-family: 'Quicksand', serif;
+  font-family: 'Quicksand', serif !important;
   z-index: 1;
 }
 
 h1 {
   margin: 0 auto;
-  font-size: 4rem;
+  font-size: 3.5rem !important;
 }
 
 h2 {
   position: relative;
-  font-size: 3rem;
+  font-size: 3rem !important;
   padding-top: 2rem;
   padding-bottom: 0.5rem;
   z-index: 1;
@@ -24,7 +24,7 @@ h2 {
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 2.2rem !important;
   margin-bottom: 0;
   margin-top: 0;
   z-index: 1;
@@ -54,10 +54,11 @@ hr {
 
 p {
   width: auto;
-  margin: 0 0 0.3rem 0;
-  font-size: 1.42rem;
+  margin: 0;
+  font-size: 1.42rem !important;
   color: white;
   display: block;
+  line-height: 0.9;
 }
 
 ul {
@@ -70,6 +71,18 @@ li {
   color: white;
 }
 
+a:link {
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: #cccccc !important;
+}
+
 .bottom-container {
   display: block;
   padding-bottom: 0.5vh;
@@ -79,7 +92,6 @@ li {
 
 .cloud {
   position: absolute;
-  width: 25%;
 }
 
 .contact-me {
@@ -95,12 +107,31 @@ li {
   right: 0;
 }
 
+.core-div {
+  position: relative;
+  height: 30rem;
+  width: 100%;
+}
+
+.core-content-div {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  right: 0;
+  top: 15%
+}
+
+.core-color {
+  background-color: #693516;
+}
+
 .game-link {
   display: block;
   position: relative;
   margin-top: 0;
   width: 100%;
-  height: 8rem;
+  height: 4rem;
 }
 
 .grass {
@@ -126,7 +157,7 @@ li {
 }
 
 .inline-paragraph {
-  display: inline-block;
+  display: inline;
 }
 
 .middle-container {
@@ -145,9 +176,8 @@ li {
 }
 
 .number-crunch-image {
-  width: 26rem;
-  float: left;
   margin-right: 1rem;
+
 }
 
 .number-crunch-text {
@@ -171,24 +201,26 @@ li {
 
 .section-heading {
   text-decoration: underline;
-  padding-bottom: 2rem;
-  padding-top: 4rem;
+}
+
+.fill {
+  width: 100%
 }
 
 .skills {
   display: block;
 }
 
+.block {
+  display: block
+}
+
 .skill-images {
-  width: 18rem;
-  float: left;
-  margin-right: 2vw;
+  margin-right: 2%;
 }
 
 .skill-row {
-  display: inline-block;
   position: relative;
-  width: 50rem;
 }
 
 .skill-text {
@@ -208,37 +240,46 @@ li {
 }
 
 .sun {
-  width: 20vw;
+  width: 20rem;
   position: absolute;
-  left: -6vw;
-  top: -13vh;
+  left: -7rem;
+  top: -8rem;
+}
+
+.sun-div {
+}
+
+.name {
+  position: relative;
 }
 
 .title {
   position: relative;
-  top: 40vh;
+  margin
+}
+
+.title-div {
+  top: 35vh;
 }
 
 .top-container {
-  padding-bottom: 120vh;
+  padding-bottom: 120vh !important;
   position: relative;
   background-color: #7FB5FF;
 }
 
 .values {
   position: relative;
+  display: block
 }
 
 .value-images {
-  width: 7rem;
-  float: left;
-  margin-right: 2vw;
+  margin-right: 2%;
 }
 
 .value-text {
   display: flex;
   text-align: left;
-  height: 7rem;
   align-items: center;
 }
 
@@ -361,33 +402,206 @@ li {
 }
 
 #cloud1 {
-  right: 20vw;
-  top: 5vh;
+  right: 20%;
+  top: -250%;
 }
 
 #cloud2 {
-  top: 40vh;
-  left: 0;
+  top: 10%;
+  left: 3%;
 }
 
 #cloud3 {
-  top: 7vh;
-  left: 20vw;
+  top: -290%;
+  left: 20%;
 }
 
 #cloud4 {
-  top: 60vh;
-  right: 35vw;
+  top: 130%;
+  left: 37%;
 }
 
 #cloud5 {
-  top: 40vh;
-  right: 5vw;
+  top: 20%;
+  right: 5%;
+}
+
+@media screen and (max-width: 1400px) {
+  #cloud1 {
+    right: 10%;
+  }
+  #cloud2 {
+
+  }
+  #cloud3 {
+    left: 15%;
+  }
+  #cloud4 {
+    top: 170%;
+  }
+  #cloud5 {
+    top: -10%;
+    right: 3%;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  #cloud1 {
+
+  }
+  #cloud2 {
+
+  }
+  #cloud3 {
+
+  }
+  #cloud4 {
+
+  }
+  #cloud5 {
+
+  }
+  .top-container {
+    padding-bottom: 100vh !important;
+  }
+
+  h2 {
+    font-size: 2.8rem !important;
+  }
+  h3 {
+    font-size: 2rem !important;
+  }
+  p {
+    font-size: 1.32rem !important;
+  }
+  a {
+    font-size: 1.32rem !important;
+  }
+  li {
+    font-size: 1.32rem !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #cloud1 {
+    right: 5%;
+    top: -170%
+  }
+  #cloud2 {
+    top: 50%;
+    left: -5%
+  }
+  #cloud3 {
+    left: 10%;
+    top: -180%
+  }
+  #cloud4 {
+    top: 140%;
+    left: 30%
+  }
+  #cloud5 {
+    top: 50%;
+    right: -3%;
+  }
+
+  h2 {
+    font-size: 2.6rem !important;
+  }
+  h3 {
+    font-size: 1.8rem !important;
+  }
+  p {
+    font-size: 1.25rem !important;
+  }
+  a {
+    font-size: 1.25rem !important;
+  }
+  li {
+    font-size: 1.25rem !important;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #cloud1 {
+    right: 5%;
+    top: -100%
+  }
+  #cloud2 {
+    top: 60%;
+    left: -5%
+  }
+  #cloud3 {
+    left: 15%;
+    top: -150%
+  }
+  #cloud4 {
+    top: 160%;
+    left: 30%
+  }
+  #cloud5 {
+    top: 60%;
+    right: -3%;
+  }
+
+  h2 {
+    font-size: 2.4rem !important;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1.1rem !important;
+  }
+  a {
+    font-size: 1.1rem !important;
+  }
+  li {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  #cloud1 {
+    right: 5%;
+    top: -200%
+  }
+  #cloud2 {
+    top: 140%;
+    left: -10%
+  }
+  #cloud3 {
+    left: -5%;
+    top: -150%
+  }
+  #cloud4 {
+    top: 250%;
+    left: 30%
+  }
+  #cloud5 {
+    top: 100%;
+    right: -8%;
+  }
+
+  h2 {
+    font-size: 2.25rem !important;
+  }
+  h3 {
+    font-size: 1.3rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+  a {
+    font-size: 1rem !important;
+  }
+  li {
+    font-size: 1rem !important;
+  }
 }
 
 #copyright {
   padding-top: 1rem;
-  font-size: 1rem;
+  font-size: 0.7rem !important;
 }
 
 #grass-layer1 {
@@ -432,7 +646,6 @@ li {
 
 #grass-layer6 {
   background-color: rgb(122, 61, 29);
-  margin-top: 6rem;
 }
 
 #grass-layer7 {
@@ -471,10 +684,42 @@ li {
   background-color: rgb(2, 15, 23);
 }
 
-#number-crunch {
-  width: auto;
+#core-layer1 {
+  background-color: rgb(133, 66, 29);
 }
 
-#values-heading {
-  padding-top: 9rem;
+#core-layer2 {
+  background-color: rgb(130, 65, 28);
+}
+
+#core-layer3 {
+  background-color: rgb(127, 64, 28);
+}
+
+#core-layer4 {
+  background-color: rgb(123, 63, 27);
+}
+
+#core-layer5 {
+  background-color: rgb(120, 61, 26);
+}
+
+#core-layer6 {
+  background-color: rgb(117, 59, 25);
+}
+
+#core-layer7 {
+  background-color: rgb(114, 57, 24);
+}
+
+#core-layer8 {
+  background-color: rgb(111, 56, 23);
+}
+
+#core-layer9 {
+  background-color: rgb(109, 55, 22);
+}
+
+#core-layer10 {
+  background-color: rgb(107, 54, 22);
 }
