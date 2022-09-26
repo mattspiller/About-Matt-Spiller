@@ -83,6 +83,10 @@ a:hover {
   color: #cccccc !important;
 }
 
+img {
+  max-width: 100% !important;
+}
+
 .bottom-container {
   display: block;
   padding-bottom: 0.5vh;
