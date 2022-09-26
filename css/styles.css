@@ -468,6 +468,9 @@ img {
   li {
     font-size: 1rem !important;
   }
+  .top-container {
+    padding-bottom: 100vh !important;
+  }
 }
 
 /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
@@ -510,6 +513,37 @@ img {
   }
 }
 
+@media screen and (orientation: landscape) and (min-width: 481px) {
+  .top-container {
+    padding-bottom: 165vh !important;
+  }
+  #cloud1 {
+    right: 10%;
+    top: -110%;
+    width: 25%;
+  }
+  #cloud2 {
+    top: 50%;
+    left: 3%;
+    width: 25%;
+  }
+  #cloud3 {
+    left: 20%;
+    top: -150%;
+    width: 25%;
+  }
+  #cloud4 {
+    top: 140%;
+    left: 40%;
+    width: 25%;
+  }
+  #cloud5 {
+    top: 50%;
+    right: 3%;
+    width: 25%;
+  }
+}
+
 /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
  @media (min-width:641px) {
    #cloud1 {
@@ -547,6 +581,87 @@ img {
    }
    li {
      font-size: 1.25rem !important;
+   }
+   .top-container {
+     padding-bottom: 100vh !important;
+   }
+ }
+
+/* tablet, landscape iPad, lo-res laptops ands desktops */
+ @media (min-width:961px) {
+   h2 {
+     font-size: 2.8rem !important;
+   }
+   h3 {
+     font-size: 2rem !important;
+   }
+   p {
+     font-size: 1.32rem !important;
+   }
+   a {
+     font-size: 1.32rem !important;
+   }
+   li {
+     font-size: 1.32rem !important;
+   }
+ }
+
+/* big landscape tablets, laptops, and desktops */
+ @media (min-width: 1025px) {
+   #cloud1 {
+     right: 10%;
+   }
+   #cloud3 {
+     left: 15%;
+   }
+   #cloud4 {
+     top: 170%;
+   }
+   #cloud5 {
+     top: -10%;
+     right: 3%;
+   }
+
+   h2 {
+     font-size: 3rem !important;
+   }
+   h3 {
+     font-size: 2.2rem !important;
+   }
+   p {
+     font-size: 1.42rem !important;
+   }
+   a {
+     font-size: 1.42rem !important;
+   }
+   li {
+     font-size: 1.42rem !important;
+   }
+ }
+
+/* hi-res laptops and desktops */
+ @media (min-width:1281px) {
+   #cloud1 {
+     right: 17%;
+     top: -250%
+   }
+   #cloud2 {
+    left: 3%;
+   }
+   #cloud3 {
+     left: 15%;
+     top: -250%;
+   }
+   #cloud4 {
+     top: 170%;
+     left: 40%
+   }
+   #cloud5 {
+     top: -10%;
+     right: 3%;
+   }
+   .top-container {
+     padding-bottom: 130vh !important;
    }
  }
 
