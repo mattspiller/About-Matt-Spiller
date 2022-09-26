@@ -510,6 +510,46 @@ img {
   }
 }
 
+/* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */
+ @media (min-width:641px) {
+   #cloud1 {
+     right: 5%;
+     top: -170%
+   }
+   #cloud2 {
+     top: 50%;
+     left: -5%
+   }
+   #cloud3 {
+     left: 10%;
+     top: -180%
+   }
+   #cloud4 {
+     top: 140%;
+     left: 30%
+   }
+   #cloud5 {
+     top: 50%;
+     right: -3%;
+   }
+
+   h2 {
+     font-size: 2.6rem !important;
+   }
+   h3 {
+     font-size: 1.8rem !important;
+   }
+   p {
+     font-size: 1.25rem !important;
+   }
+   a {
+     font-size: 1.25rem !important;
+   }
+   li {
+     font-size: 1.25rem !important;
+   }
+ }
+
 #copyright {
   padding-top: 1rem;
   font-size: 0.7rem !important;
