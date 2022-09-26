@@ -430,141 +430,8 @@ img {
   right: 5%;
 }
 
-@media screen and (max-width: 1400px) {
-  #cloud1 {
-    right: 10%;
-  }
-  #cloud2 {
-
-  }
-  #cloud3 {
-    left: 15%;
-  }
-  #cloud4 {
-    top: 170%;
-  }
-  #cloud5 {
-    top: -10%;
-    right: 3%;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  #cloud1 {
-
-  }
-  #cloud2 {
-
-  }
-  #cloud3 {
-
-  }
-  #cloud4 {
-
-  }
-  #cloud5 {
-
-  }
-  .top-container {
-    padding-bottom: 100vh !important;
-  }
-
-  h2 {
-    font-size: 2.8rem !important;
-  }
-  h3 {
-    font-size: 2rem !important;
-  }
-  p {
-    font-size: 1.32rem !important;
-  }
-  a {
-    font-size: 1.32rem !important;
-  }
-  li {
-    font-size: 1.32rem !important;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  #cloud1 {
-    right: 5%;
-    top: -170%
-  }
-  #cloud2 {
-    top: 50%;
-    left: -5%
-  }
-  #cloud3 {
-    left: 10%;
-    top: -180%
-  }
-  #cloud4 {
-    top: 140%;
-    left: 30%
-  }
-  #cloud5 {
-    top: 50%;
-    right: -3%;
-  }
-
-  h2 {
-    font-size: 2.6rem !important;
-  }
-  h3 {
-    font-size: 1.8rem !important;
-  }
-  p {
-    font-size: 1.25rem !important;
-  }
-  a {
-    font-size: 1.25rem !important;
-  }
-  li {
-    font-size: 1.25rem !important;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  #cloud1 {
-    right: 5%;
-    top: -100%
-  }
-  #cloud2 {
-    top: 60%;
-    left: -5%
-  }
-  #cloud3 {
-    left: 15%;
-    top: -150%
-  }
-  #cloud4 {
-    top: 160%;
-    left: 30%
-  }
-  #cloud5 {
-    top: 60%;
-    right: -3%;
-  }
-
-  h2 {
-    font-size: 2.4rem !important;
-  }
-  h3 {
-    font-size: 1.5rem !important;
-  }
-  p {
-    font-size: 1.1rem !important;
-  }
-  a {
-    font-size: 1.1rem !important;
-  }
-  li {
-    font-size: 1.1rem !important;
-  }
-}
-
-@media screen and (max-width: 576px), (orientation: portrait) {
+/* smartphones, iPhone, portrait 480x320 phones */
+@media (min-width:320px) {
   #cloud1 {
     right: 5%;
     top: -200%
@@ -600,6 +467,46 @@ img {
   }
   li {
     font-size: 1rem !important;
+  }
+}
+
+/* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width:481px)  {
+  #cloud1 {
+    right: 5%;
+    top: -100%
+  }
+  #cloud2 {
+    top: 60%;
+    left: -5%
+  }
+  #cloud3 {
+    left: 15%;
+    top: -150%
+  }
+  #cloud4 {
+    top: 160%;
+    left: 30%
+  }
+  #cloud5 {
+    top: 60%;
+    right: -3%;
+  }
+
+  h2 {
+    font-size: 2.4rem !important;
+  }
+  h3 {
+    font-size: 1.5rem !important;
+  }
+  p {
+    font-size: 1.1rem !important;
+  }
+  a {
+    font-size: 1.1rem !important;
+  }
+  li {
+    font-size: 1.1rem !important;
   }
 }
 
