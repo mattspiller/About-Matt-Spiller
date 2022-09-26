@@ -560,7 +560,7 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 576px), (orientation: portrait) {
   #cloud1 {
     right: 5%;
     top: -200%
