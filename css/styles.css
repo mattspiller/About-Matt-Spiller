@@ -434,7 +434,7 @@ img {
 @media (min-width:320px) {
   #cloud1 {
     right: 5%;
-    top: -200%
+    top: -170%
   }
   #cloud2 {
     top: 140%;
@@ -442,10 +442,10 @@ img {
   }
   #cloud3 {
     left: -5%;
-    top: -150%
+    top: -100%
   }
   #cloud4 {
-    top: 250%;
+    top: 205%;
     left: 30%
   }
   #cloud5 {
@@ -472,7 +472,7 @@ img {
     padding-bottom: 100vh !important;
   }
   .title-div {
-    top: 43vh;
+    top: 39vh;
   }
 }
 
